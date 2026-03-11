@@ -10,5 +10,5 @@ Sum_Assured_Lakhs = st.number_input("Enter Sum_Assured_Lakhs: ")
 
 if st.button("Predict"):
     model = Insurance_Prediction()
-    result = model.prediction1(Age,Annual_Income_LPA,Policy_Term_Years,Sum_Assured_Lakhs)
+    result = model.prediction(Age,Annual_Income_LPA,Policy_Term_Years,Sum_Assured_Lakhs)
     st.success(result)
